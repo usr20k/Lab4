@@ -33,7 +33,55 @@
 					11. Submit Button (links to home page)
 
 			-->
-			<input type="submit" value="submit" class="btn btn-primary btn-block">
+			<table width="50%" align="left" cellpadding="5">
+			<tr>
+			<th colspan="2">Personal Information</th>
+			</tr>
+			<tr>
+				<td colspan="2"><label for="input_id">Name </label>
+				<input type="text" id="name" name="field_name"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><label for="input_id">Email Address </label>
+				<input type="text" id="email" name="field_name"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><label for="input_id">Password </label>
+				<input type="text" id="pass" name="field_name"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><label for="input_id">Confirm Password </label>
+				<input type="text" id="cpass" name="field_name"></td>
+			</tr>
+			<tr>
+				<th colspan="2">Student Status</th>
+			</tr>
+			<tr>
+				<td><input type="radio" name="alum" value="1" checked> Alumni
+				<input type="radio" name="alum" value="2"> Student</td>
+				<td><input type="radio" name="grad" value="1" checked> Grad
+								<input type="radio" name="grad" value="2"> Undergrad</td>
+				</td>
+			</tr>
+			<tr>
+				<th>Undergrad Status</th>
+				<th>Grad Status</th>
+			</tr>
+			<tr>
+				<td><select name="undergrad">
+					<option selected>Freshman</option>
+					<option value="1">Sophomore</option>
+					<option value="2">Junior</option>
+					<option value="3">Senior</option>
+				</select></td>
+				<td><select name="grad">
+									<option selected>MA</option>
+									<option value="1">MBA</option>
+									<option value="2">PhD</option>
+								</select></td>
+			</tr>
+			</table>
+			<input type="submit" value="Submit" class="btn btn-primary btn-block" style="width: 200px; align: left;">
 		</form>
 	</div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
